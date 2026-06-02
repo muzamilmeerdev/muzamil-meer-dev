@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
+
+  <url>
     <loc>https://muzamilmeercom.vercel.app/</loc>
   </url>
 
@@ -13,10 +14,8 @@
   </url>
 
   <url>
-    <loc>https://muzamilmeer.vercel.app/contact</loc>
+    <loc>https://muzamilmeercom.vercel.app/contact</loc>
   </url>
-
-</urlset>
 
   <url>
     <loc>https://muzamilmeerdev.vercel.app/contact</loc>
