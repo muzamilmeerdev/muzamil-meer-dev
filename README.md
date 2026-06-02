@@ -1,28 +1,48 @@
-📁 Project Structure
+# 👨‍💻 Muzamil Meer Dev 🚀
+
+A personal React + Vite project built for learning, UI practice, and portfolio showcase.
+
+---
+
+## 📁 Project Structure 🗂️
+
 src/
  ├── app/
  │   ├── components/
- │   │    ├── ui/
- │   │    ├── HeroSection.tsx
- │   │    ├── SkillsSection.tsx
- │   │    ├── ProjectsSection.tsx
- │   │    ├── ContactSection.tsx
- │   │    ├── Navbar.tsx
- │   │    └── Footer.tsx
- │   ├── routes.tsx
- │   ├── App.tsx
- │   └── main.tsx
- ├── styles/
- ├── index.html
- └── vite.config.ts
+ │   │    ├── ui (shadcn components) 🎨
+ │   │    ├── HeroSection.tsx 🏠
+ │   │    ├── SkillsSection.tsx 💡
+ │   │    ├── ProjectsSection.tsx 📂
+ │   │    ├── ContactSection.tsx 📞
+ │   │    ├── Navbar.tsx 🔝
+ │   │    └── Footer.tsx 🔻
+ │   ├── App.tsx ⚛️
+ │   ├── routes.tsx 🧭
+ │   └── main.tsx 🚀
+ ├── styles 🎨
+ ├── index.html 🌐
+ └── vite.config.ts ⚙️
 
+---
 
-About
-Personal React + Vite project built for learning and UI practice.
+## 🚀 About ✨
 
-Tech
-React • TypeScript • Vite • Tailwind • shadcn/ui
+This project is built for **learning frontend development** and improving skills in React, TypeScript, and modern UI design.
 
-Run
-pnpm install
-pnpm dev
+---
+
+## 🛠️ Tech Stack 💻
+
+- ⚛️ React  
+- 📘 TypeScript  
+- ⚡ Vite  
+- 🎨 Tailwind CSS  
+- 🧩 shadcn/ui  
+
+---
+
+## ▶️ Run Project 🏃‍♂️
+
+```bash
+pnpm install 📦
+pnpm dev 🚀
