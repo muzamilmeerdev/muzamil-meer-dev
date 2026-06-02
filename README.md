@@ -1,6 +1,6 @@
 # 👨‍💻 Muzamil Meer Dev 🚀
 
-A personal React + Vite project built for learning, UI practice, and portfolio showcase.
+A modern React + Vite personal project built for learning, UI practice, and portfolio showcase.
 
 ---
 
@@ -9,17 +9,33 @@ A personal React + Vite project built for learning, UI practice, and portfolio s
 src/
  ├── app/
  │   ├── components/
- │   │    ├── ui (shadcn components) 🎨
- │   │    ├── HeroSection.tsx 🏠
- │   │    ├── SkillsSection.tsx 💡
- │   │    ├── ProjectsSection.tsx 📂
+ │   │    ├── figma/ 🎨
+ │   │    │     └── ImageWithFallback.tsx
+ │   │    ├── ui/ 🧩
+ │   │    ├── AboutSection.tsx 🧾
+ │   │    ├── AlertsBanner.tsx 🚨
  │   │    ├── ContactSection.tsx 📞
+ │   │    ├── DepartmentGrid.tsx 🏢
+ │   │    ├── Footer.tsx 🔻
+ │   │    ├── GovFooter.tsx 🏛️
+ │   │    ├── GovHeader.tsx 🏛️
+ │   │    ├── GovHero.tsx 🏛️
+ │   │    ├── GuidanceSection.tsx 📌
+ │   │    ├── HeroSection.tsx 🏠
  │   │    ├── Navbar.tsx 🔝
- │   │    └── Footer.tsx 🔻
+ │   │    ├── ProjectsSection.tsx 📂
+ │   │    ├── QuickServices.tsx ⚡
+ │   │    ├── Scene3D.tsx 🎮
+ │   │    └── SkillsSection.tsx 💡
  │   ├── App.tsx ⚛️
  │   ├── routes.tsx 🧭
  │   └── main.tsx 🚀
- ├── styles 🎨
+ ├── styles/ 🎨
+ │   ├── fonts.css
+ │   ├── globals.css
+ │   ├── index.css
+ │   ├── tailwind.css
+ │   └── theme.css
  ├── index.html 🌐
  └── vite.config.ts ⚙️
 
@@ -27,7 +43,8 @@ src/
 
 ## 🚀 About ✨
 
-This project is built for **learning frontend development** and improving skills in React, TypeScript, and modern UI design.
+This project is a **modern frontend web application** built using React and Vite.  
+It is focused on learning advanced UI structure, reusable components, and clean architecture.
 
 ---
 
