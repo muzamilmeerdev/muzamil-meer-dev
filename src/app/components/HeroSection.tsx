@@ -356,7 +356,7 @@ export function HeroSection() {
                   }}
                 >
                   <img
-                    src="https://res.cloudinary.com/dxjkbpmgm/image/upload/v1779790372/WhatsApp_Image_2026-05-26_at_3.38.15_PM_yv63vk.jpg"
+                    src="https://res.cloudinary.com/dxjkbpmgm/image/upload/v1781601849/WhatsApp_Image_2026-06-16_at_2.53.04_PM_jcqyoz.jpg"
                     alt="Muzamil Ahmad Mir"
                     style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
                   />
