@@ -2,18 +2,6 @@ import { useState, useRef } from "react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { Send, Mail, MapPin, Clock, CheckCircle, AlertCircle } from "lucide-react";
-import emailjs from "@emailjs/browser";
-
-// ─── EmailJS Setup ───────────────────────────────────────────────
-// 1. emailjs.com par free account banao
-// 2. Email Service add karo (Gmail select karo) → apna SERVICE_ID yahan likho
-// 3. Email Template banao (variables: {{from_name}}, {{from_email}}, {{message}}) → TEMPLATE_ID
-// 4. Account > API Keys se PUBLIC_KEY copy karo
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // ← yahan apna Service ID likho
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // ← yahan apna Template ID likho
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // ← yahan apna Public Key likho
-// ────────────────────────────────────────────────────────────────
-
 export function ContactSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -21,33 +9,40 @@ export function ContactSection() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
+  setError(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError(false);
-
-    emailjs.send(
-      EMAILJS_SERVICE_ID,
-      EMAILJS_TEMPLATE_ID,
-      {
-        from_name: form.name,
-        from_email: form.email,
-        message: form.message,
-        to_email: "muzamilmeer598@gmail.com",
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
-      EMAILJS_PUBLIC_KEY
-    )
-    .then(() => {
-      setLoading(false);
+      body: JSON.stringify({
+        access_key: "c2bc7822-f4a1-48c5-96b7-29fb1aa03583",
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
       setSent(true);
       setForm({ name: "", email: "", message: "" });
-    })
-    .catch(() => {
-      setLoading(false);
+    } else {
       setError(true);
-    });
-  };
+    }
+  } catch (err) {
+    setError(true);
+  }
+
+  setLoading(false);
+};
 
   return (
     <section id="contact" className="py-28 px-6" style={{ background: "rgba(0,0,0,0.2)" }}>
