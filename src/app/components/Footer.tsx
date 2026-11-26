@@ -27,7 +27,7 @@ export function Footer() {
         <div className="flex items-center gap-3">
           {[
             { Icon: Github, href: "https://github.com/muzamilmeerdev" },
-            { Icon: Linkedin, href: "https://www.linkedin.com/in/muzamil-ahmad-mir" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/muzamilmeerdev" },
             { Icon: Twitter, href: "#" },
           ].map(({ Icon, href }, i) => (
             <motion.a
